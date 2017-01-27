@@ -1,0 +1,11 @@
+#auto-generated from intelliJ
+.idea
+
+#auto-generated from Mac
+.DS_Store
+
+#file
+OOC-ZorkArt.iml
+
+#auto-generated from Maven
+target/
