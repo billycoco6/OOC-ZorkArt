@@ -5,7 +5,7 @@
 .DS_Store
 
 #file
-.iml
+OOC-ZorkArt.iml
 
 #auto-generated from Maven
 target/
