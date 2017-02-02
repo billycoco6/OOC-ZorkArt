@@ -1,0 +1,20 @@
+0,0,Bone,null,0,1,-1,-1,-1,-1,-1,-1,B2 FL: Prison,You were kept in prison ... but wait it seems like the dog is keeping the key and there is a 'Bone' in your room. Maybe he might like it!
+0,1,Rusty-Sword,null,0,4,0,3,0,0,0,2,Prison Main Hallway,There is a pirate sleeping with a 'Rusty-Sword' by his side ... this room is surrounded by cells there is an exit to the north
+0,2,null,null,-1,-1,0,1,-1,-1,-1,-1,Cell,The room is empty probably the prior prisoner was taken out
+0,3,null,Wolf,-1,-1,-1,-1,-1,-1,0,1,Cell,The Prison Main Hallway is to the west ... I hear the sniffing sound
+0,4,Macchiato,null,-1,-1,0,6,0,1,0,5,Prison Hallway,There is a sound from the west and light from the east. Someone left 'Macchiato' at the corner of the room
+0,5,iSword,Bengal-Tiger,-1,-1,0,4,-1,-1,-1,-1,Barracks,There is the 'iSword' nailed on the wall ... No!! There is a 'Bengal-Tiger' in this room
+0,6,Espresso,null,1,0,-1,-1,-1,-1,0,4,Prison Entrance,There is a stair to the north we can take it to the next floor and 'Espresso' on the table
+1,0,Rum,null,-1,-1,-1,-1,0,6,1,1,B1 FL: Monster Labyrinth,There is a 'Rum' leftover after the last night party a sip of it is not a bad idea
+1,1,Raw-Meat,Bengal-Tiger,-1,-1,1,0,1,2,-1,-1,The Labyrinth Entrance,There is a 'Raw-Meat' ... after that 'Bengal-Tiger'
+1,2,Earlgrey,null,1,1,1,3,1,4,1,5,The Labyrinth Main Hallway,There are light from all directions ...
+1,3,Raw-Meat,Bengal-Tiger,-1,-1,-1,-1,-1,-1,1,2,The East Labyrinth,There is a 'Raw-Meat' ... after that 'Bengal-Tiger'
+1,4,null,Wyvern,1,2,-1,-1,-1,-1,-1,-1,The Dragon Nest,Wyvernnnn!!! Wait she looks hungry maybe we can find something for her to eat
+1,5,Raw-Meat,null,-1,-1,1,2,1,6,-1,-1,The West Labyrinth,There is a piece of 'Raw-Meat' on the ground and I can feel the wind from the south
+1,6,Rum,null,1,5,2,0,-1,-1,-1,-1,The Assembly Point,There is a stair to the Deck and hey! someone 'Rum' is there
+2,0,null,null,-1,-1,2,1,-1,-1,1,6,G: Deck,There is a path the east
+2,1,Raw-Meat,Pirate,2,2,-1,-1,-1,-1,2,0,Deck Field,There is a piece of 'Raw-Meat' watch out the 'Pirate'
+2,2,iSword-Pro,null,-1,-1,2,3,2,1,-1,-1,Captain Room Hallway,Look!! 'iSword-Pro'. I gotta hurry our crews are waiting
+2,3,Earlgrey,null,2,5,-1,-1,2,4,2,2,Captain Room Entrance,OMG! 'Earlgrey' and to the north is the Gatewinson's Room ... we probably need to check the living room on the south first
+2,4,Raw-Meat,Pirate,2,3,-1,-1,-1,-1,-1,-1,Living Room,There is a piece of 'Raw-Meat' watch out the 'Pirate' we are close to the captain room
+2,5,Rum,Captain-Gatewinson,-1,-1,-1,-1,2,3,-1,-1,Captain Room,Impressive!! Here is the end Bob
