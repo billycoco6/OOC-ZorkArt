@@ -1,13 +1,13 @@
-This programme is using factory design pattern.
+ZorkRunner --> main() method
 
-- main() in ZorkRunner called the Zork classs which retrieve the current state of the game.
-	a. currentRoom() returns the current room
-	b. getPlayer() returns the status of the player
+CommandParser --> get and resolve the input from command line and send to correspond function
 
-- CMD has the method getInput(), which takes the command typed in command line and trigger the command directed by that command via getCommand() in CMDParser
+Command --> call start(), which triggers the CommandParser
 
-- ItemFactory, MonsterFactory and MapGenerator are abstract classes, which create new Item, Monster and Map accordingly
+Character --> contains all attributes of the player status, Inventory, HP & Attack.
 
-- Class Room is extended from Map, which displays the event in each room such as Monster, Item and Trap via getRoomEvent()
+MapFactory --> Load the data from config file, represents the location and status of each room, and use it to create map by filling the attributes in Room.
 
-- Class Player represents the status and action of player such as health, inventory and movement
+MonsterFactory --> create Monster, which is parent of all Monster classes.
+
+ItemFactory --> create Item, which is parent of all Item classes.

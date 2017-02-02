@@ -50,13 +50,5 @@ public class MapFactory {
             cRoom.setRoomDescription(description);
             ZorkMap.put(roomID, cRoom);
         }
-
-//        Room test = ZorkMap.get("01");
-//        System.out.println("test");
-//        System.out.println(test.getItem().getName());
-//        System.out.println(test.getExitMap("north"));
-//        System.out.println(test.getExitMap("east"));
-//        System.out.println(test.getExitMap("south"));
-//        System.out.println(test.getExitMap("west"));
     }
 }
