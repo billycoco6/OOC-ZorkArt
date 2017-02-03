@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class CommandParser {
 
-    List<String> weaponList = new ArrayList<>(Arrays.asList("Rusty-Sword","iSword","iSword-Pro"));
+    List<String> weaponList = new ArrayList<>(Arrays.asList("Rusty-Sword","iSword","iSword-Pro","rusty-sword","isword","isword-pro"));
     private MapFactory mapFactory = new MapFactory();
     public HashMap<String, Room> ZorkMap = mapFactory.getZorkMap();
     private Character player = new Character();
@@ -73,7 +73,7 @@ public class CommandParser {
                 System.out.println("Tinker Bell: The room is empty");
             }
             else {
-                if (object.equals(cRoom.getItem().getName())) {
+                if (object.equalsIgnoreCase(cRoom.getItem().getName())) {
                     cRoom.takeItem();
                     System.out.println("You picked up " + object);
                     System.out.println("My Bag:");
@@ -96,7 +96,7 @@ public class CommandParser {
             try {
                 for (Item i : player.Inventories) {
                     System.out.println(i.getName());
-                    if (i.getName().equals(object)) {
+                    if (i.getName().equalsIgnoreCase(object)) {
                         player.Inventories.remove(i);
                         System.out.println("Tinker Bell: You just dropped your " + object);
                         match = true;
@@ -105,7 +105,7 @@ public class CommandParser {
                 }
                 for (Item i : player.Utility) {
                     System.out.println(i.getName());
-                    if (i.getName().equals(object)) {
+                    if (i.getName().equalsIgnoreCase(object)) {
                         System.out.println("Tinker Bell: I don't think you should drop that item");
                         match = true;
                         break;
@@ -124,7 +124,7 @@ public class CommandParser {
             try {
                 boolean match = false;
                 for (Item i : player.Inventories) {
-                    if (i.getName().equals(object)) {
+                    if (i.getName().equalsIgnoreCase(object)) {
                         int itemPower = i.isUsed();
                         if (object.equals("Rum")) {
                             player.setAttack(player.getAttack() + itemPower);
@@ -144,8 +144,8 @@ public class CommandParser {
                         match = true;
                         break;
                     }
-                    if (i.getName().equals(object)) {
-                        if (object.equals("Raw-Meat")) {
+                    if (i.getName().equalsIgnoreCase(object)) {
+                        if (object.equalsIgnoreCase("Raw-Meat")) {
                             if (!cRoom.getMonster().getName().equals("Wyvern")) {
                                 System.out.println("Tinker Bell: There is nothing to feed in this room");
                                 break;
@@ -187,7 +187,7 @@ public class CommandParser {
                 int monsterHP = cRoom.getMonster().getHP();
                 if (weaponList.contains(object)) {
                     for (Item i : player.Utility) {
-                        if (i.getName().equals(object)) {
+                        if (i.getName().equalsIgnoreCase(object)) {
                             int AttackPower = player.getAttack() + i.isUsed();
                             match = true;
                             System.out.println("You deal '" + AttackPower + "' to " + cRoom.getMonster().getName());
